@@ -1,0 +1,19 @@
+/* Xóa gạch dưới cho thẻ <a> */
+a {
+  text-decoration: none !important;
+  font-size: 20px;
+}
+
+/* Thêm hiệu ứng hover cho thẻ <a> */
+a:hover .fa-arrow-right {
+  transform: translateX(5px); /* Dịch sang phải 5px */
+  transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động mượt */
+  color: #a50021;
+}
+
+a:hover {
+  transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động mượt */
+}
+
+.section-header {
+}
