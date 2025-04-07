@@ -2,21 +2,20 @@ import React from "react";
 
 import logo from "../../assets/images/cropped-logo-.png";
 import "./header.scss";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="header">
+    <div className="header color-primary-bg">
       <div className="header-top color-red-bg color-yellow-text d-flex justify-content-between">
-        <div className="text-start">
-          BẢO TÀNG VĂN HỌC VIỆT NAM. GIỜ MỞ CỬA 9H - 17H
-        </div>
+        <div className="text-start">BẢO TÀNG VĂN HỌC VIỆT NAM</div>
         <div className="text-end">ĐĂNG NHẬP | ĐĂNG KÝ</div>
       </div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary ">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <NavLink className="navbar-brand" to="/">
             <img className="header-logo" src={logo} alt="logo" />
-          </a>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -31,14 +30,14 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item me-3">
-                <a className="nav-link active" aria-current="page" href="#">
+                <NavLink className="nav-link" aria-current="page" to="/">
                   TRANG CHỦ
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item me-3">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link " aria-current="page" to="/news">
                   TIN TỨC
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item me-3 dropdown">
                 <a
@@ -52,14 +51,22 @@ export default function Header() {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink
+                      className="dropdown-item "
+                      aria-current="page"
+                      to="/authors"
+                    >
                       Tác giả
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink
+                      className="dropdown-item "
+                      aria-current="page"
+                      to="/works"
+                    >
                       Tác phẩm
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">

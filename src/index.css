@@ -6,12 +6,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f7f7ed;
   --bs-dropdown-link-active-bg: #a50021 !important;
-  --bs-font-sans-serif: "Funnel Sans", sans-serif !important;
+
+  font-family: "Metrophobic", sans-serif !important;
 }
 
 a {
   text-decoration: none;
+  color: #13130d;
 }
-code {
-  font-family: "Funnel Sans", sans-serif;
+
+a:hover {
+  color: #a50021;
+}
+
+pre {
+  font-family: "Metrophobic", sans-serif !important;
 }

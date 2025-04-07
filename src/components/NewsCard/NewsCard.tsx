@@ -1,16 +1,16 @@
 import React from "react";
-import "./authorcard.scss";
-interface AuthorCardProps {
-  author: number;
+import "./newscard.scss";
+interface NewsCardProps {
+  news: number;
   key: number;
 }
 
-export default function AuthorCard(props: AuthorCardProps) {
+export default function NewsCard(props: NewsCardProps) {
   return (
-    <div className="col-4  p-4 " key={props.key}>
-      <div className="card p-3">
+    <div className="col-4 p-4" key={props.key}>
+      <div className="card p-3 ">
         <a href="#">
-          <div className="image-container">
+          <div className="image-container ">
             <img
               src="https://baotangvanhoc.vn/wp-content/uploads/2022/01/Nha-van-Le-Van-Thao.jpg"
               className="card-img-top"
@@ -19,7 +19,7 @@ export default function AuthorCard(props: AuthorCardProps) {
           </div>
         </a>
         <div className="card-body">
-          <h5 className="card-title">
+          <h5 className="card-title font-w-900">
             <a href="#" className="color-dark-text">
               Card title
             </a>

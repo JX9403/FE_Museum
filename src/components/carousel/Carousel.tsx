@@ -32,7 +32,9 @@ export default function Carousel() {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <div className="overlay">
-            <div className="slider-text-top color-light-text ">Địa chỉ</div>
+            <div className="slider-text-top color-light-text ">
+              Chào mừng bạn đến với
+            </div>
             <div className="slider-text color-light-text ">
               BẢO TÀNG VĂN HỌC VIỆT NAM
             </div>
